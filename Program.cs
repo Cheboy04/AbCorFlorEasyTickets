@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using ProjectoTicketsAbCorFlo.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<ProjectoTicketsAbCorFloContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ProjectoTicketsAbCorFloContext") ?? throw new InvalidOperationException("Connection string 'ProjectoTicketsAbCorFloContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
