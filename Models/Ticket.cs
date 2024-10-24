@@ -11,5 +11,6 @@
         //1 usuario por ticket
         public int UsuarioID { get; set; }
         public Usuario? Usuario { get; set; }
+
     }
 }

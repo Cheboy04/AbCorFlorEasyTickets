@@ -2,5 +2,22 @@
     ViewData["Title"] = "Compra y Venta de Tickets";
 }
 <h1>@ViewData["Title"]</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <p>Encuentra los mejores eventos y compra entradas fácilmente.</p>
+            <a href="/Tickets/Listar" class="btn btn-primary">Listar Entrada para la Venta</a>
+        </div>
+    </div>
 
-<p>Use this page to detail your site's privacy policy.</p>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="~/images/concierto.jpg" alt="Pártido">
+                <div class="card-body">
+                    <h5 class="card-title">Pártido de Fútbol</h5>
+                    <p class="card-text">Entradas para el partido más esperado de Ecuador.</p>
+                    <a href="/Tickets/Detalles/1" class="btn btn-primary">Comprar Entrada</a>
+                </div>
+            </div>
+        </div>

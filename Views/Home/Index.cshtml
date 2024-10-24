@@ -1,8 +1,20 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Bienvenido a EasyTickets";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<h1>@ViewData["Title"]</h1>
+<div class="jumbotron">
+<p class="lead">Explora entradas para conciertos, eventos deportivos y más.</p>
+<a class="btn btn-primary btn-lg" href="/Tickets/Navegar" role="button">Ver Entradas</a>
+<div class="row">
+    <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+            <img src="~/images/concierto.jpg" class="card-img-top" alt="Concierto">
+            <div class="card-body">
+                <h5 class="card-title">Concierto de Waldokinc El Troyano</h5>
+                <p class="card-text">Disfruta de una noche de perreo inolvidable.</p>
+                <a href="/Tickets/Detalles/1" class="btn btn-primary">Ver Detalles</a>
+            </div>
+        </div>
+    </div>
 </div>

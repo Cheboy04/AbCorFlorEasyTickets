@@ -20,3 +20,13 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.jumbotron {
+    background-color: #f8f9fa;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.card {
+    margin: 15px 0;
+}
